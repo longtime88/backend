@@ -9,9 +9,9 @@ use Symfony\Component\Routing\Annotation\Route;
 
 class AuthController
 {
-  #[Route('/Controller/ApiController', name: 'api_login', methods: ['POST'])]
+  #[Route('/api/login', name: 'api_login', methods: ['POST'])]
   public function login(Request $request): JsonResponse
-  {
+  {  
     // JSON auslesen
     $data = json_decode($request->getContent(), true);
 
