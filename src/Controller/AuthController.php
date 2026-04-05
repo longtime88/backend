@@ -19,7 +19,7 @@ class AuthController
     $password = $data['password'] ?? null;
 
     // Beispielhafte Prüfung (hier würdest du DB + Passwortprüfung machen)
-    if ($email === 'myprogram@justmail.de' && $password === '') {
+    if ($email === 'myprogram@justmail.de' && $password === 'test123') {
       return new JsonResponse([
         'token' => 'FAKE_JWT_TOKEN_123'
       ]);
